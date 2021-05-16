@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="MainActivity"
+    android:background="@drawable/backgroundmain">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="MainActivity">
+
+
+        <ImageButton
+            android:id="@+id/startbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/gamestartbtn"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/firstbtn"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/appname" />
+
+        <ImageButton
+            android:id="@+id/endbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gameendbtn"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/howtoplay"/>
+
+        <ImageButton
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/startbtn"
+            android:id="@+id/scorebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/scorebtn" />
+
+        <ImageButton
+            android:id="@+id/howtoplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/startbtn"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/howtoplaybtn" />
+
+        <ImageButton
+            android:id="@+id/apibtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/endbtn"
+            android:background="@drawable/api"
+            android:layout_centerHorizontal="true"/>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/banner01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:adSize="SMART_BANNER"
+            app:adUnitId="ca-app-pub-5936585570964651/8388020082"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+        </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

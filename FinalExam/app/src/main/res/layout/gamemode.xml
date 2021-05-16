@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SubActivity"
+    android:background="@drawable/backgroundmain2">
+"
+
+
+
+    <ImageButton
+        android:background="@drawable/come"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/monsterbtn"/>
+
+    <TextView
+        android:textSize="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="경과 시간"
+        android:fontFamily="@font/maplefont"
+        android:id="@+id/timeview"/>
+
+    <ImageView
+        android:id="@+id/monster"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="170dp"
+        android:layout_height="162dp"
+        android:background="@drawable/back" />
+
+    <TextView
+        android:textSize="40dp"
+        android:id="@+id/monsterhe"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="몬스터 채력"
+        android:fontFamily="@font/maplefont"/>
+
+
+    <TextView
+        android:textSize="35dp"
+        android:hint="나의 주파수"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt"
+        android:fontFamily="@font/maplefont"/>
+
+    <TextView
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:id="@+id/aaaa"
+        android:hint="나의 점수는??"
+        android:fontFamily="@font/maplefont"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="MainActivity">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/banner01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="SMART_BANNER"
+        app:adUnitId="ca-app-pub-5936585570964651/8388020082"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+    </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+
+</LinearLayout>
